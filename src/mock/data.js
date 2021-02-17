@@ -19,7 +19,7 @@ export const heroData = {
 export const aboutData = {
   img: 'Profile_.jpg',
   paragraphOne: 'I am a final year computing student, specialising in Business Information Systems, on track for a 1:1. Previously, I have six months work experience as a Web Development intern.',
-  paragraphTwo: 'I have an an huge interest in web development, cloud computing and working with databases. My key technical skills include: modern JavaScript (ES6), HTML5, CSS/SCSS/SASS, SQL/NoSQL databases, with experience using front end frameworks such as React.',
+  paragraphTwo: 'I have a huge interest in software development, web technologies and working with databases. My key technical skills include: modern JavaScript (ES6), HTML5, CSS/SCSS/SASS, SQL/NoSQL databases, with experience using front end frameworks such as React.',
   paragraphThree: 'Outside of development, my hobbies include rugby, reading and PC hardware. For more detail please see my CV below!',
   resume: 'https://drive.google.com/file/d/1UdXmxp61XGgy2qox2pnbkrlSlVY-_zA3/view?usp=sharing', // if no resume, the button will not show up
 };

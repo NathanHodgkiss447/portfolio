@@ -46,7 +46,7 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: 'programmingJournal.PNG',
+    img: 'journal.PNG',
     title: 'Smart Programming Journal (Ongoing)',
     info: 'This was my fourth year Software Project, created using React, with Firebase and NodeJS. The project digitalises the concept of a programming journal while adding additional useful fuctionality such as chat & a resource section.',
     info2: '',

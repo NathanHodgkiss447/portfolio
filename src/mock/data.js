@@ -48,7 +48,7 @@ export const projectsData = [
     id: nanoid(),
     img: 'journal.PNG',
     title: 'Smart Programming Journal (Ongoing)',
-    info: 'This is my fourth year Software Project, created using React on the front-end, with Firebase on the back-end. This projct also makes use of the natural language processing library Compromise to analyse user input, and uses AlanAI for a custom voice assistant. The project digitalises the concept of a programming journal while adding additional useful fuctionality such as chat & a resource section.',
+    info: 'This is my fourth year Software Project, created using React on the front-end, with Firebase on the back-end. This project also makes use of the natural language processing library Compromise to analyse user input, and uses AlanAI for a custom voice assistant. The project digitalises the concept of a programming journal while adding additional useful fuctionality such as chat & a resource section.',
     info2: '',
     url: 'https://github.com/NathanHodgkiss447',
     repo: '', // if no repo, the button will not show up

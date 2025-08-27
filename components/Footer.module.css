@@ -1,2 +1,12 @@
-.footer { margin-top: 64px; padding: 24px; color: var(--muted); }
-.row { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+.footer {
+  margin-top: 64px;
+  padding: 24px;
+  color: var(--muted);
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}

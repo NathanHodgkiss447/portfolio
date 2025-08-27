@@ -24,6 +24,7 @@ export default function RootLayout({
         <ThemeScript />
       </head>
       <body>
+        <div className="ambient" aria-hidden="true" />
         <Header />
         <main className="container" role="main">
           {children}

@@ -8,10 +8,13 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import timeline from "@/content/timeline.json";
 import Timeline from "@/components/Timeline";
+import { useCursorGlow } from "@/lib/useCursorGlow";
 
 export default function HomePage() {
+  useCursorGlow({ elementId: "page-glow" });
+  
   return (
-    <>
+    <div id="page-glow" className={styles.pageContainer}>
       <section className={styles.hero}>
         <div className={styles.heroProfile}>
           <Image
@@ -34,11 +37,16 @@ export default function HomePage() {
             </motion.h1>
           </div>
         </div>
-        <p className={styles.heroDescription}>
+        <motion.p 
+          className={styles.heroDescription}
+          initial={{ opacity: 0, y: 8 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4, ease: "easeOut", delay: 0.1 }}
+        >
           I build fast, minimal, and elegant web apps — with a focus on
           performance, DX, and clean UI. I love TypeScript, React/Next.js, and
           thoughtful animations that respect users.
-        </p>
+        </motion.p>
         <div className={styles.heroTech}>
           <span className={styles.techChip}>TypeScript</span>
           <span className={styles.techChip}>Next.js</span>
@@ -85,6 +93,6 @@ export default function HomePage() {
         </p>
         <ContactForm />
       </section>
-    </>
+    </div>
   );
 }

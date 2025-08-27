@@ -11,6 +11,7 @@
 }
 
 .heroAvatar {
+  object-fit: cover;
   border-radius: 50%;
   box-shadow: var(--shadow);
   border: 2px solid color-mix(in oklab, var(--surface), white 15%);
@@ -86,4 +87,35 @@
   display: grid;
   gap: 18px;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+}
+
+/* Page-wide cursor glow container */
+.pageContainer {
+  position: relative;
+  min-height: 100vh;
+  z-index: 2;
+
+  /* Cursor position variables */
+  --cursor-x: 50vw;
+  --cursor-y: 50vh;
+
+  /* Create page-wide glow effect */
+  &::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(
+      400px circle at var(--cursor-x) var(--cursor-y),
+      var(--page-glow-color),
+      transparent 60%
+    );
+    opacity: var(--page-glow-opacity);
+    pointer-events: none;
+    z-index: -1;
+    will-change: opacity;
+    mix-blend-mode: var(--page-glow-blend);
+  }
 }

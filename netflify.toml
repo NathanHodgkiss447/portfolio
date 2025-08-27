@@ -1,0 +1,19 @@
+[build]
+  command = "pnpm build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "22"
+  NEXT_TELEMETRY_DISABLED = "1"
+  # If you hit pnpm hoisting/import issues, uncomment:
+  # PNPM_FLAGS = "--shamefully-hoist"
+
+# Optional: set canonical URL per context
+[context.production.environment]
+  NEXT_PUBLIC_SITE_URL = "https://your-site.netlify.app"
+
+[context.deploy-preview.environment]
+  NEXT_PUBLIC_SITE_URL = "https://deploy-preview-${DEPLOY_PR_NUMBER}--${SITE_NAME}.netlify.app"
+
+[context.branch-deploy.environment]
+  NEXT_PUBLIC_SITE_URL = "https://${BRANCH}--${SITE_NAME}.netlify.app"

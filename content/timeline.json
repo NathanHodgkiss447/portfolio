@@ -1,0 +1,38 @@
+[
+  {
+    "start": "2025-03",
+    "end": null,
+    "title": "Freelance Web Developer",
+    "org": "Self-employed",
+    "location": "Dublin, Ireland",
+    "bullets": [
+      "Shipped performant Next.js apps with accessible UI and fast LCP.",
+      "Designed clean component APIs and lightweight animations."
+    ],
+    "stack": ["TypeScript", "Next.js", "Node", "CSS Modules", "Framer Motion"]
+  },
+  {
+    "start": "2024-02",
+    "end": "2025-02",
+    "title": "Frontend Engineer (Contract)",
+    "org": "Product Studio",
+    "location": "Remote",
+    "bullets": [
+      "Built a design-system kit and docs; reduced CSS by 35%.",
+      "Led a11y review; achieved WCAG 2.1 AA for core flows."
+    ],
+    "stack": ["React", "Storybook", "Vite", "Testing Library"]
+  },
+  {
+    "start": "2022-09",
+    "end": "2023-12",
+    "title": "Junior Web Developer",
+    "org": "Agency",
+    "location": "Dublin",
+    "bullets": [
+      "Implemented marketing sites with solid Core Web Vitals.",
+      "Automated CI previews and basic lighthouse checks."
+    ],
+    "stack": ["Next.js", "Node", "Playwright"]
+  }
+]

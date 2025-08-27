@@ -1,0 +1,89 @@
+.hero {
+  display: grid;
+  gap: 24px;
+  padding: 56px 0 24px;
+}
+
+.heroProfile {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.heroAvatar {
+  border-radius: 50%;
+  box-shadow: var(--shadow);
+  border: 2px solid color-mix(in oklab, var(--surface), white 15%);
+}
+
+.heroInfo {
+  display: grid;
+  gap: 4px;
+}
+
+.heroDescription {
+  color: var(--muted);
+  max-width: 70ch;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.heroTech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.techChip {
+  padding: 6px 12px;
+  background: var(--surface);
+  border-radius: 20px;
+  font-size: 0.85rem;
+  color: var(--text);
+  border: 1px solid color-mix(in oklab, var(--surface), white 12%);
+}
+
+.ctaRow {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.kicker {
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.heading {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  line-height: 1.1;
+  font-weight: 700;
+  margin: 0;
+}
+
+.subtle {
+  color: var(--muted);
+  max-width: 70ch;
+}
+.section {
+  margin-top: 48px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  margin-top: 48px;
+  align-items: center;
+}
+.headingRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+}

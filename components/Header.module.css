@@ -1,0 +1,13 @@
+.wrap {
+  position: sticky; top: 0; z-index: 50;
+  border-bottom: 1px solid color-mix(in oklab, var(--surface), white 10%);
+}
+.inner {
+  composes: header-blur from global;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 12px 24px;
+}
+.brand { font-weight: 600; letter-spacing: .2px; }
+.nav { display: flex; gap: 16px; align-items: center; }
+.link { opacity: .9; transition: opacity .15s ease, transform .15s ease; }
+.link:hover { opacity: 1; transform: translateY(-1px); }

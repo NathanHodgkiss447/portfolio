@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Realtime Kanban",
+    "summary": "Collaborative board with optimistic UI & WebSockets.",
+    "stack": ["Next.js", "tRPC", "Postgres"],
+    "links": { "live": "#", "repo": "#" },
+    "cover": "/images/placeholder.png",
+    "slug": "realtime-kanban",
+    "role": "Full-stack",
+    "year": 2025
+  },
+  {
+    "title": "Design System Kit",
+    "summary": "Tokens, components, and docs for product teams.",
+    "stack": ["React", "Storybook"],
+    "links": { "live": "#", "repo": "#" },
+    "cover": "/images/placeholder.png",
+    "slug": "design-system-kit",
+    "role": "Frontend",
+    "year": 2024
+  }
+]

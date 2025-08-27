@@ -1,0 +1,20 @@
+.form {
+  display: grid;
+  gap: 12px;
+  width: 70%;
+  max-width: 500px;
+  margin-top: 12px;
+}
+.input,
+.textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid color-mix(in oklab, var(--surface), white 12%);
+  background: var(--surface);
+  color: var(--text);
+}
+.textarea {
+  min-height: 140px;
+  resize: vertical;
+}
